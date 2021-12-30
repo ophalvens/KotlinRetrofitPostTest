@@ -56,12 +56,16 @@ if (!$result) {
     deliver_response($response);
 }
 
-// Vorm de resultset om naar een structuur die we makkelijk kunnen 
-// doorgeven en stop deze in $response['data']
 
+// De volgende 3 waarden voegen we toe om in onze clients meer detail
+// te hebben over wat we doorsturen. Laat deze 3 lijnen wel niet staan
+// in je productie omgeving.
 $response['postvars'] = json_encode($postvars);
 $response['body'] = json_encode($body);
 $response['post'] = json_encode($_POST);
+
+// Vorm de resultset om naar een structuur die we makkelijk kunnen
+// doorgeven en stop deze in $response['data']
 $response['data'] = getJsonObjFromResult($result); // -> fetch_all(MYSQLI_ASSOC)
 
 // maak geheugen vrij op de server door de resultset te verwijderen
