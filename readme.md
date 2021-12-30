@@ -19,7 +19,7 @@ Om enkel op dit deel te focussen, zit in het voorbeeld geen JSON conversie met M
 * Stuur POST data door met `@FormUrlEncoded`
 * In PHP haal je deze data rechtstreeks uit `$_POST` 
 
-Meer uitleg staat in het pdf document [Retrofit-php.pdf](docs/Retrofit-php.pdf) zolang dat document nog niet volledig is omgezet is naar dit bestand.
+Deze uitleg staat ook in het pdf document [Retrofit-php.pdf](docs/Retrofit-php.pdf).
 
 ## Kotlin - Retrofit
 
