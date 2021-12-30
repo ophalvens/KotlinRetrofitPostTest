@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinRetrofitPostTest</string>
+    <string name="testlogin">Test Login</string>
+    <string name="get_producten">Get Producten</string>
+</resources>
